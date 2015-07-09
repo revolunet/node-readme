@@ -1,7 +1,7 @@
 {
   "name": "node-readme",
-  "version": "0.1.1",
-  "description": "Generate and maintain your JS projects README.md files using ES6 syntax",
+  "version": "0.1.2",
+  "description": "Generate your JS project README.md using an ES6 template",
   "license": "MIT",
   "repository": "revolunet/node-readme",
   "author": {

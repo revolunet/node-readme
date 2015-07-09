@@ -1,6 +1,6 @@
 # node-readme ![npm](https://img.shields.io/npm/v/node-readme.svg) ![license](https://img.shields.io/npm/l/node-readme.svg) ![github-issues](https://img.shields.io/github/issues/revolunet/node-readme.svg)
 
-Generate and maintain your JS projects README.md files using ES6 syntax
+Generate your JS project README.md using an ES6 template
 
 ![nodei.co](https://nodei.co/npm/node-readme.png?downloads=true&downloadRank=true&stars=true)
 
