@@ -27,7 +27,7 @@ Add a command in your package.json :
 
 Then run `npm run readme` to generate your README.md.
 
-You can copy and customize the [default README template](./src/.README.md) and add it to your project.
+You can copy and customize the [default README template](./src/.README.md) and add it to your project as `.README.md`.
 
 It uses the [Javascript ES6 syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
 
