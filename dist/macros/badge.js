@@ -16,7 +16,7 @@ var badges = {
         return image('https://img.shields.io/npm/v/' + scope.pkg.name + '.svg', 'npm');
     },
     'nodei': function nodei(scope) {
-        return image('https://nodei.co/' + scope.pkg.name + '.png?downloads=true&downloadRank=true&stars=true', 'nodei.co');
+        return image('https://nodei.co/npm/' + scope.pkg.name + '.png?downloads=true&downloadRank=true&stars=true', 'nodei.co');
     },
     'travis-status': function travisStatus(scope) {
         return image('https://img.shields.io/travis/' + scope.pkg.repository + '.svg', 'travis-status');

@@ -2,7 +2,7 @@
 
 Generate and maintain your JS projects README.md files using ES6 syntax
 
-![nodei.co](https://nodei.co/revolunet/node-readme.png?downloads=true&downloadRank=true&stars=true)
+![nodei.co](https://nodei.co/npm/node-readme.png?downloads=true&downloadRank=true&stars=true)
 
 ![github-issues](https://img.shields.io/github/issues/revolunet/node-readme.svg)
 ![licence](https://img.shields.io/github/license/revolunet/node-readme.svg)
@@ -17,7 +17,7 @@ Generate and maintain your JS projects README.md files using ES6 syntax
 
 ## Install
 
-`npm install --save revolunet/node-readme`
+`npm install --save-dev revolunet/node-readme`
 
 ## Usage
 
