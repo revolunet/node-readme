@@ -1,8 +1,4 @@
 
-
-function singleAuthor(name) {
-    return ` - **${name}** : https://spdx.org/licenses/${name}.html`;
-}
 export default function author(options, scope) {
     if (typeof scope.pkg.author === 'string') {
         return scope.pkg.author;

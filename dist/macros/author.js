@@ -5,10 +5,6 @@ Object.defineProperty(exports, '__esModule', {
 });
 exports['default'] = author;
 
-function singleAuthor(name) {
-    return ' - **' + name + '** : https://spdx.org/licenses/' + name + '.html';
-}
-
 function author(options, scope) {
     if (typeof scope.pkg.author === 'string') {
         return scope.pkg.author;
