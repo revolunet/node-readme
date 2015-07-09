@@ -24,8 +24,8 @@ var badges = {
     'github-issues': function githubIssues(scope) {
         return image('https://img.shields.io/github/issues/' + scope.pkg.repository + '.svg', 'github-issues');
     },
-    'github-licence': function githubLicence(scope) {
-        return image('https://img.shields.io/github/license/' + scope.pkg.repository + '.svg', 'licence');
+    'license': function license(scope) {
+        return image('https://img.shields.io/npm/l/' + scope.pkg.name + '.svg', 'license');
     },
     'github-stars': function githubStars(scope) {
         return image('https://img.shields.io/github/stars/' + scope.pkg.repository + '.svg', 'stars');
@@ -36,7 +36,7 @@ var badges = {
 };
 
 function badge(type, scope) {
-    return badges[type](scope);
+    return badges[type] ? badges[type](scope) : '';
 }
 
 module.exports = exports['default'];

@@ -35,7 +35,9 @@ function toMarkdown(templateContents, data) {
     var boundMacros = {};
     Object.keys(macros).forEach(function (key, idx) {
         boundMacros[key] = function (options) {
-            return macros[key](options, scope);
+            return (macros[key] || function () {
+                return '';
+            })(options, scope);
         };
     });
     var scope = _extends({}, data, boundMacros);

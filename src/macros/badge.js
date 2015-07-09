@@ -16,8 +16,8 @@ const badges = {
     'github-issues': scope => {
         return image(`https://img.shields.io/github/issues/${scope.pkg.repository}.svg`, 'github-issues');
     },
-    'github-licence': scope => {
-        return image(`https://img.shields.io/github/license/${scope.pkg.repository}.svg`, 'licence');
+    'license': scope => {
+        return image(`https://img.shields.io/npm/l/${scope.pkg.name}.svg`, 'license');
     },
     'github-stars': scope => {
         return image(`https://img.shields.io/github/stars/${scope.pkg.repository}.svg`, 'stars');
@@ -28,5 +28,5 @@ const badges = {
 };
 
 export default function badge(type, scope) {
-    return badges[type](scope);
+    return badges[type]?badges[type](scope):'';
 }
