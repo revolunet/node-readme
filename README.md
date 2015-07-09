@@ -14,7 +14,7 @@ Generate your JS project README.md using an ES6 template
 
 ## Install
 
-`npm install --save-dev revolunet/node-readme`
+`npm install --save-dev node-readme`
 
 ## Usage
 
