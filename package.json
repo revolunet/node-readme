@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "readme": "node ./.bin/node-readme.js",
     "build": "babel -d dist/ src/ && cp ./src/.README.md ./dist/.README.md"
@@ -23,6 +23,22 @@
     "doc",
     "babel"
   ],
+  "browserify": {
+    "transform": "babelify"
+  },
+  "testling": {
+    "files": "spec/**/*.spec.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/5..latest",
+      "ipad/5..latest",
+      "android-browser/2..latest"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "babel": "5.6.14",
