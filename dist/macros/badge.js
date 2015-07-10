@@ -32,6 +32,9 @@ var badges = {
     },
     'github-forks': function githubForks(scope) {
         return image('https://img.shields.io/github/forks/' + scope.pkg.repository + '.svg', 'forks');
+    },
+    'circleci': function circleci(scope) {
+        return image('https://circleci.com/gh/' + scope.pkg.repository + '.svg?style=svg', 'Circle CI build status');
     }
 };
 

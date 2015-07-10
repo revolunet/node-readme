@@ -24,6 +24,9 @@ const badges = {
     },
     'github-forks': scope => {
         return image(`https://img.shields.io/github/forks/${scope.pkg.repository}.svg`, 'forks');
+    },
+    'circleci': scope => {
+        return image(`https://circleci.com/gh/${scope.pkg.repository}.svg?style=svg`, 'Circle CI build status');
     }
 };
 
