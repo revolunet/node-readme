@@ -14,14 +14,21 @@ Generate your JS project README.md using an ES6 template
 
 ## Install
 
+As a project dependency
+
 `npm install --save-dev node-readme`
+
+Or globally
+
+`npm install --save-dev --global node-readme`
 
 ## Usage
 
 Add a command in your package.json :
-```
+
+```json
 "scripts": {
-  "readme": "node ./node_modules/node-readme/.bin/node-readme.js"
+  "readme": "node-readme"
 },
 ```
 
@@ -33,7 +40,7 @@ It uses the [Javascript ES6 syntax](https://developer.mozilla.org/en-US/docs/Web
 
 ## Scripts  
 
- - **npm run readme** : `node ./.bin/node-readme.js`
+ - **npm run readme** : `node bin/node-readme.js`
  - **npm run build** : `babel -d dist/ src/ && cp ./src/.README.md ./dist/.README.md`
 
 

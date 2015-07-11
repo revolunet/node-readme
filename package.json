@@ -13,8 +13,11 @@
     "node": ">=0.10.0"
   },
   "main": "src/index.js",
+  "bin": {
+    "node-readme": "bin/node-readme.js"
+  },
   "scripts": {
-    "readme": "node ./.bin/node-readme.js",
+    "readme": "node bin/node-readme.js",
     "build": "babel -d dist/ src/ && cp ./src/.README.md ./dist/.README.md"
   },
   "keywords": [
