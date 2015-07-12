@@ -66,6 +66,10 @@ Package | Version | Dev
 [es6-templates](https://www.npmjs.com/package/es6-templates) | 0.2.2 | ✔
 
 
+## Contributing
+
+Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
+
 ## Author
 
 Julien Bouquillon <julien@bouquillon.com> http://github.com/revolunet
