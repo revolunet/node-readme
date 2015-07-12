@@ -29,3 +29,9 @@ var _author2 = require('./author');
 var _author3 = _interopRequireDefault(_author2);
 
 exports.author = _author3['default'];
+
+var _dependencies2 = require('./dependencies');
+
+var _dependencies3 = _interopRequireDefault(_dependencies2);
+
+exports.dependencies = _dependencies3['default'];

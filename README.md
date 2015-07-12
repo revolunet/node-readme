@@ -40,7 +40,9 @@ Then run `npm run readme` to generate your README.md.
 
 You can copy and customize the [default README template](./src/.README.md) and add it to your project as `.README.md`.
 
-It uses the [Javascript ES6 syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings) and you have access to these macros and variables :
+It uses the [Javascript ES6 syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings)
+
+You can use these macros and variables :
 
 ### Badges
 
@@ -56,13 +58,21 @@ It uses the [Javascript ES6 syntax](https://developer.mozilla.org/en-US/docs/Web
 ### Others
  - `scripts()` : list of npm scripts
  - `license()`: show license type + link
- - `author()`: show author info
+ - `dependencies()` : list of project dependencies
  - `pkg` : direct access to package.json
 
 ## Scripts  
 
  - **npm run readme** : `node bin/node-readme.js`
  - **npm run build** : `babel -d dist/ src/ && cp ./src/.README.md ./dist/.README.md`
+
+## Dependencies
+
+Package | Version | Dev
+--- |:---:|:---:
+[babel](https://www.npmjs.com/package/babel) | 5.6.14 | ✔
+[es6-template-strings](https://www.npmjs.com/package/es6-template-strings) | 1.0.0 | ✔
+[es6-templates](https://www.npmjs.com/package/es6-templates) | 0.2.2 | ✔
 
 
 ## Author
