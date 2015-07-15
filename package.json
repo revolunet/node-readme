@@ -1,6 +1,6 @@
 {
   "name": "node-readme",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Generate your JS project README.md using an ES6 template",
   "license": "MIT",
   "repository": "revolunet/node-readme",
@@ -43,9 +43,9 @@
     ]
   },
   "dependencies": {
-      "es6-template-strings": "1.0.0",
-      "es6-templates": "0.2.2",
-      "oss-license-name-to-url": "1.2.1"
+    "es6-template-strings": "1.0.0",
+    "es6-templates": "0.2.2",
+    "oss-license-name-to-url": "1.2.1"
   },
   "devDependencies": {
     "babel": "5.6.14",
