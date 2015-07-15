@@ -17,6 +17,9 @@ function singleDep(name, version) {
 function dependenciesList(obj) {
     var dev = arguments[1] === undefined ? false : arguments[1];
 
+    if (!obj) {
+        obj = {};
+    }
     return Object.keys(obj).map(function (name) {
         return singleDep(name, obj[name], dev);
     });

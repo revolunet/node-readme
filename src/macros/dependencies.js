@@ -6,6 +6,9 @@ function singleDep(name, version, dev=false) {
 }
 
 function dependenciesList(obj, dev=false) {
+    if (!obj) {
+        obj = {};
+    }
     return Object.keys(obj).map(name => {
         return singleDep(name, obj[name], dev);
     });
