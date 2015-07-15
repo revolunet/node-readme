@@ -61,11 +61,11 @@ It uses the [Javascript ES6  syntax](https://developer.mozilla.org/en-US/docs/We
 
 Package | Version | Dev
 --- |:---:|:---:
+[es6-template-strings](https://www.npmjs.com/package/es6-template-strings) | 1.0.0 | ✖
+[es6-templates](https://www.npmjs.com/package/es6-templates) | 0.2.2 | ✖
+[oss-license-name-to-url](https://www.npmjs.com/package/oss-license-name-to-url) | 1.2.1 | ✖
 [babel](https://www.npmjs.com/package/babel) | 5.6.14 | ✔
 [babel-eslint](https://www.npmjs.com/package/babel-eslint) | 3.1.23 | ✔
-[es6-template-strings](https://www.npmjs.com/package/es6-template-strings) | 1.0.0 | ✔
-[es6-templates](https://www.npmjs.com/package/es6-templates) | 0.2.2 | ✔
-[oss-license-name-to-url](https://www.npmjs.com/package/oss-license-name-to-url) | 1.2.1 | ✔
 
 
 ## Contributing
