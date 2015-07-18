@@ -1,6 +1,6 @@
 {
   "name": "node-readme",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Generate your JS project README.md using an ES6 template",
   "license": "MIT",
   "repository": "revolunet/node-readme",
