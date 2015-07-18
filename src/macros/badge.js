@@ -31,8 +31,14 @@ const badges = {
     'github-issues': scope => {
         return image(`https://img.shields.io/github/issues/${getRepoPath(scope.pkg.repository)}.svg`, 'github-issues');
     },
+    'npm-license': scope => {
+        return image(`https://img.shields.io/npm/l/${scope.pkg.name}.svg`, 'license');
+    },
     'license': scope => {
         return image(`https://img.shields.io/npm/l/${scope.pkg.name}.svg`, 'license');
+    },
+    'github-license': scope => {
+        return image(`https://img.shields.io/github/license/${getRepoPath(scope.pkg.repository)}.svg`, 'stars');
     },
     'github-stars': scope => {
         return image(`https://img.shields.io/github/stars/${getRepoPath(scope.pkg.repository)}.svg`, 'stars');
@@ -42,6 +48,28 @@ const badges = {
     },
     'circleci': scope => {
         return image(`https://circleci.com/gh/${getRepoPath(scope.pkg.repository)}.svg?style=svg`, 'Circle CI build status');
+    },
+    'dependencies': scope => {
+        return image(`https://david-dm.org/${getRepoPath(scope.pkg.repository)}/status.svg`);
+    },
+    'devDependencies': scope => {
+        return image(`https://david-dm.org/${getRepoPath(scope.pkg.repository)}/dev-status.svg`);
+    },
+    'deprecated': scope => {
+        return image(`http://badges.github.io/stability-badges/dist/deprecated.svg`);
+        //https://david-dm.org/${getRepoPath(scope.pkg.repository)}/dev-status.svg`);
+    },
+    'experimental': scope => {
+        return image(`http://badges.github.io/stability-badges/dist/experimental.svg`);
+    },
+    'unstable': scope => {
+        return image(`http://badges.github.io/stability-badges/dist/unstable.svg`);
+    },
+    'stable': scope => {
+        return image(`http://badges.github.io/stability-badges/dist/stable.svg`);
+    },
+    'locked': scope => {
+        return image(`http://badges.github.io/stability-badges/dist/locked.svg`);
     }
 };
 

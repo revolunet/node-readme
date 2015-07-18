@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "bin": {
     "node-readme": "bin/node-readme.js"
   },
@@ -26,22 +26,6 @@
     "doc",
     "babel"
   ],
-  "browserify": {
-    "transform": "babelify"
-  },
-  "testling": {
-    "files": "spec/**/*.spec.js",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/5..latest",
-      "ipad/5..latest",
-      "android-browser/2..latest"
-    ]
-  },
   "dependencies": {
     "es6-template-strings": "1.0.0",
     "es6-templates": "0.2.2",
