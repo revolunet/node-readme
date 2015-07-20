@@ -23,7 +23,7 @@ Generate your JS project README.md using an ES6 template
 Add a command in your package.json :
 ```
 "scripts": {
-  "readme": "node ./node_modules/node-readme/.bin/node-readme.js"
+  "readme": "node ./node_modules/.bin/node-readme"
 },
 ```
 
@@ -45,6 +45,7 @@ It uses the [Javascript ES6  syntax](https://developer.mozilla.org/en-US/docs/We
  - `badge('github-stars')` : show # of github stars
  - `badge('github-forks')` : show # of github forks
  - `badge('circleci')` : show circleci status
+ - all status from [stability-badges](https://github.com/badges/stability-badges)
 
 ### Others
  - `scripts()` : list of npm scripts
