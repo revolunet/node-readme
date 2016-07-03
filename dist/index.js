@@ -22,7 +22,7 @@ var _es6TemplateStrings = require('es6-template-strings');
 
 var _es6TemplateStrings2 = _interopRequireDefault(_es6TemplateStrings);
 
-var _macros = require('./macros');
+var _macros = require("./macros");
 
 var macros = _interopRequireWildcard(_macros);
 
@@ -34,7 +34,11 @@ function toMarkdown(templateContents, data) {
     // bould all functions in ./macros and pass the current scope (data + macros)
     var boundMacros = {};
     Object.keys(macros).forEach(function (key, idx) {
-        boundMacros[key] = function (options) {
+        boundMacros[key] = function () {
+            for (var _len = arguments.length, options = Array(_len), _key = 0; _key < _len; _key++) {
+                options[_key] = arguments[_key];
+            }
+
             return (macros[key] || function () {
                 return '';
             })(options, scope);
@@ -76,7 +80,7 @@ function compile(userPath, fallbackPath, cb) {
  * or the default node-readme `src/.README.md` template
  */
 function createReadme() {
-    var overwrite = arguments[0] === undefined ? true : arguments[0];
+    var overwrite = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
 
     compile('.README.md', _path2['default'].join(__dirname, './.README.md'), function (markdown) {
         var destination = _path2['default'].join(process.cwd(), './README.md');

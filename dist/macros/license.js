@@ -17,7 +17,7 @@ function license(options, scope) {
     } else if (scope.pkg.licenses) {
         return scope.pkg.licenses.map(function (license) {
             return singleLicense(license.type);
-        }).join(';');
+        }).join('\;');
     }
 }
 

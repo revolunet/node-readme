@@ -6,7 +6,7 @@ Object.defineProperty(exports, '__esModule', {
 exports['default'] = badge;
 
 function image(src) {
-    var title = arguments[1] === undefined ? '' : arguments[1];
+    var title = arguments.length <= 1 || arguments[1] === undefined ? '' : arguments[1];
 
     return '![' + title + '](' + src + ')';
 }
@@ -35,6 +35,10 @@ var badges = {
     },
     'travis-status': function travisStatus(scope) {
         return image('https://img.shields.io/travis/' + getRepoPath(scope.pkg.repository) + '.svg', 'travis-status');
+    },
+    'codeship': function codeship(scope, options) {
+        var projectId = options.splice(0, 1)[0];
+        return image('https://img.shields.io/codeship/' + projectId + '.svg', 'codeship-status');
     },
     'github-issues': function githubIssues(scope) {
         return image('https://img.shields.io/github/issues/' + getRepoPath(scope.pkg.repository) + '.svg', 'github-issues');
@@ -81,8 +85,9 @@ var badges = {
     }
 };
 
-function badge(type, scope) {
-    return badges[type] ? badges[type](scope) : '';
+function badge(options, scope) {
+    var type = options.splice(0, 1)[0];
+    return badges[type] ? badges[type](scope, options) : '';
 }
 
 module.exports = exports['default'];
