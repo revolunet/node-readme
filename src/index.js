@@ -12,7 +12,9 @@ function toMarkdown(templateContents, data) {
     // bould all functions in ./macros and pass the current scope (data + macros)
     let boundMacros = {};
     Object.keys(macros).forEach((key, idx) => {
-      boundMacros[key] = options => (macros[key] || function(){ return '';})(options, scope);
+      boundMacros[key] = function(...options) {
+        return (macros[key] || function(){ return '';})(options, scope);
+      }
     });
     let scope = { ...data, ...boundMacros};
     let markdown = template(templateContents, scope);

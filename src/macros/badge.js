@@ -28,6 +28,10 @@ const badges = {
     'travis-status': scope => {
         return image(`https://img.shields.io/travis/${getRepoPath(scope.pkg.repository)}.svg`, 'travis-status');
     },
+    'codeship': (scope, options) => {
+        let projectId = options.splice(0, 1)[0];
+        return image(`https://img.shields.io/codeship/${projectId}.svg`, 'codeship-status');
+    },
     'github-issues': scope => {
         return image(`https://img.shields.io/github/issues/${getRepoPath(scope.pkg.repository)}.svg`, 'github-issues');
     },
@@ -73,6 +77,7 @@ const badges = {
     }
 };
 
-export default function badge(type, scope) {
-    return badges[type]?badges[type](scope):'';
+export default function badge(options, scope) {
+    let type = options.splice(0, 1)[0];
+    return badges[type]?badges[type](scope, options):'';
 }

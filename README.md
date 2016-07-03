@@ -45,6 +45,7 @@ It uses the [Javascript ES6  syntax](https://developer.mozilla.org/en-US/docs/We
  - `badge('github-stars')` : show # of github stars
  - `badge('github-forks')` : show # of github forks
  - `badge('circleci')` : show circleci status
+ - `badge('codeship', 'ProjectUUID')` : show codeship build status
  - all status from [stability-badges](https://github.com/badges/stability-badges)
 
 ### Others
