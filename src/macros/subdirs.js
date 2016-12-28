@@ -26,7 +26,7 @@ export default function subdirs(options, scope) {
       return acc
     }
     if (!acc.hasOwnProperty(componentName)) {
-      acc[componentName] = false
+      acc[componentName] = true
     }
     if (/readme\.md/i.test(relativePath)) {
       acc[componentName] = true
