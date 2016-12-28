@@ -22,6 +22,9 @@ export default function subdirs(options, scope) {
     const relativePath = filepath.replace(basePath + '/', '')
     const componentName = relativePath.split('/').slice(0, 1)[0]
     const firstLetter = componentName[0]
+    if (/\./i.test(componentName)) {
+      return acc
+    }
     if (firstLetter.toUpperCase() !== firstLetter) {
       return acc
     }

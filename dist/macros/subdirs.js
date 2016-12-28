@@ -26,6 +26,9 @@ function subdirs(options, scope) {
     var relativePath = filepath.replace(basePath + '/', '');
     var componentName = relativePath.split('/').slice(0, 1)[0];
     var firstLetter = componentName[0];
+    if (/\./i.test(componentName)) {
+      return acc;
+    }
     if (firstLetter.toUpperCase() !== firstLetter) {
       return acc;
     }
