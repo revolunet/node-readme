@@ -25,9 +25,6 @@ export default function subdirs(options, scope) {
     if (/\./i.test(componentName)) {
       return acc
     }
-    if (firstLetter.toUpperCase() !== firstLetter) {
-      return acc
-    }
     if (!acc.hasOwnProperty(componentName)) {
       acc[componentName] = true
     }
