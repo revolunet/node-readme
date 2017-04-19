@@ -6,7 +6,7 @@ Object.defineProperty(exports, '__esModule', {
 exports['default'] = badge;
 
 function image(src) {
-    var title = arguments[1] === undefined ? '' : arguments[1];
+    var title = arguments.length <= 1 || arguments[1] === undefined ? '' : arguments[1];
 
     return '![' + title + '](' + src + ')';
 }

@@ -35,3 +35,9 @@ var _dependencies2 = require('./dependencies');
 var _dependencies3 = _interopRequireDefault(_dependencies2);
 
 exports.dependencies = _dependencies3['default'];
+
+var _subdirs2 = require('./subdirs');
+
+var _subdirs3 = _interopRequireDefault(_subdirs2);
+
+exports.subdirs = _subdirs3['default'];
